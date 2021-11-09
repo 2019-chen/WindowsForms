@@ -32,6 +32,8 @@ namespace WindowsFormsApp1.NewFolder1
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_panel2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -69,6 +71,27 @@ namespace WindowsFormsApp1.NewFolder1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1072, 81);
             this.panel1.TabIndex = 6;
+            // 
+            // textBox8
+            // 
+            this.textBox8.AllowDrop = true;
+            this.textBox8.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox8.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.textBox8.Font = new System.Drawing.Font("幼圆", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox8.Location = new System.Drawing.Point(742, 23);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(246, 31);
+            this.textBox8.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(984, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // button2
             // 
@@ -160,6 +183,7 @@ namespace WindowsFormsApp1.NewFolder1
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(196, 24);
             this.textBox3.TabIndex = 13;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label4
             // 

@@ -46,5 +46,10 @@ namespace WindowsFormsApp1.NewFolder1
         {
 
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

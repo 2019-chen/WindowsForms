@@ -70,7 +70,8 @@ namespace WindowsFormsApp1
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-
+            this.Hide();  //22
+            new Form1().Show();
         }
 
         private void button1_Click_1(object sender, EventArgs e)

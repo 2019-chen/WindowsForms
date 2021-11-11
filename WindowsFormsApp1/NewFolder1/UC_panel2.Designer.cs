@@ -82,6 +82,7 @@ namespace WindowsFormsApp1.NewFolder1
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(246, 31);
             this.textBox8.TabIndex = 4;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // pictureBox1
             // 

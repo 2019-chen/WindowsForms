@@ -65,15 +65,21 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             int i = dataGridView1.CurrentRow.Index;
             DataGridViewRow row = dataGridView1.Rows[i];
             MySqlConnection con = getCon();
-            con.Open();
-            string sql = "DELETE  FROM 挂号信息 WHERE 诊疗卡号=" + dataGridView1.CurrentRow.Cells[0].Value.ToString(); 
-            MySqlCommand cmd = new MySqlCommand(sql, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            dataGridView1.Rows.Remove(row);
+            DialogResult dr = MessageBox.Show("是否叫号"+ dataGridView1.CurrentRow.Cells[2].Value.ToString()+"?", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (dr == DialogResult.OK)
+            {
+               con.Open();
+               string sql = "DELETE  FROM 挂号信息 WHERE 诊疗卡号=" + dataGridView1.CurrentRow.Cells[0].Value.ToString(); 
+               MySqlCommand cmd = new MySqlCommand(sql, con);
+               cmd.ExecuteNonQuery();
+               con.Close();
+               dataGridView1.Rows.Remove(row);
+            }
+            
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
